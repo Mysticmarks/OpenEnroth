@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['magicenum_0',['MagicEnum',['../Serialization__ut_8cpp.html#adb7b8082bc42eac875e12a319393e1b3',1,'Serialization_ut.cpp']]],
+  ['magicfileformat_1',['MagicFileFormat',['../MagicEnums_8h.html#a3897ef62e96b7b8629563ff9fa6daf47',1,'MagicEnums.h']]],
+  ['magicschool_2',['MagicSchool',['../SpellEnums_8h.html#a2906cf412f4a8ce5dfc642a72e4b85f4',1,'SpellEnums.h']]],
+  ['mapid_3',['MapId',['../MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0',1,'MapEnums.h']]],
+  ['mapstartpoint_4',['MapStartPoint',['../MapEnums_8h.html#adad43ef8fbf56e2a3bc00fd08cca312f',1,'MapEnums.h']]],
+  ['maptreasurelevel_5',['MapTreasureLevel',['../MapEnums_8h.html#a9caf6e49814ed45e74006ac1c02cbefe',1,'MapEnums.h']]],
+  ['mapweatherflag_6',['MapWeatherFlag',['../MapEnums_8h.html#a450810edd1f1a49e5537842bef92750f',1,'MapEnums.h']]],
+  ['mastery_7',['Mastery',['../CharacterEnums_8h.html#ab6968d695763bf76b60188a58d79c579',1,'CharacterEnums.h']]],
+  ['menutype_8',['MenuType',['../GUIEnums_8h.html#ae5c7b6b4f6e696391cd7faaea6571bb4',1,'GUIEnums.h']]],
+  ['merchantphrase_9',['MerchantPhrase',['../NPCEnums_8h.html#ae5f0216e8dba588cb07f084d31620936',1,'NPCEnums.h']]],
+  ['migration_10',['Migration',['../structOpenEnrothOptions.html#acf5c187a7f1935df0f59fdc5d7a2bc39',1,'OpenEnrothOptions']]],
+  ['monsteraitype_11',['MonsterAiType',['../MonsterEnums_8h.html#aa1e4d12b1e3d4491a8af20318a81a83a',1,'MonsterEnums.h']]],
+  ['monsterattackpreference_12',['MonsterAttackPreference',['../MonsterEnums_8h.html#a0b5fd7097e027577e35297679af06a1d',1,'MonsterEnums.h']]],
+  ['monsterhostility_13',['MonsterHostility',['../MonsterEnums_8h.html#afd55c26f076611124ae70d54156f45de',1,'MonsterEnums.h']]],
+  ['monsterid_14',['MonsterId',['../MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01ba',1,'MonsterEnums.h']]],
+  ['monstermovementtype_15',['MonsterMovementType',['../MonsterEnums_8h.html#a60e42756d5e5296bb7899009dc031706',1,'MonsterEnums.h']]],
+  ['monsterprojectile_16',['MonsterProjectile',['../MonsterEnums_8h.html#ae9f6e32f32b82e90982c488ea68c1b9c',1,'MonsterEnums.h']]],
+  ['monsterspecialability_17',['MonsterSpecialAbility',['../MonsterEnums_8h.html#a218b53e162aceef51fd7cc3187d53e10',1,'MonsterEnums.h']]],
+  ['monsterspecialattack_18',['MonsterSpecialAttack',['../MonsterEnums_8h.html#a1df9618b5d7a552e42cafde238a35ce9',1,'MonsterEnums.h']]],
+  ['monstersupertype_19',['MonsterSupertype',['../MonsterEnums_8h.html#a2c1f62d94e6002b4791d31d5515864b2',1,'MonsterEnums.h']]],
+  ['monstertier_20',['MonsterTier',['../MonsterEnums_8h.html#ad7610efe7d136685512ac5d3efa52cd4',1,'MonsterEnums.h']]],
+  ['monstertype_21',['MonsterType',['../MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492',1,'MonsterEnums.h']]],
+  ['musicid_22',['MusicId',['../SoundEnums_8h.html#aa639cf25629d8107eff53fe3b15460b8',1,'SoundEnums.h']]]
+];
