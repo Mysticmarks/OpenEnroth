@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;135c41f</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;cf228e9</span>
    </div>
   </td>
  </tr>
@@ -83,7 +83,7 @@ $(function() {
 <code>#include &lt;type_traits&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;magic_enum.hpp&gt;</code><br />
-<code>#include &quot;<a class="el" href="Preprocessor_8h.html">Utility/Preprocessor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Utility_2Preprocessor_8h.html">Utility/Preprocessor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Serialization_8h.html">Serialization.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SerializationExceptions_8h.html">SerializationExceptions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="EnumSerializer_8h.html">EnumSerializer.h</a>&quot;</code><br />
@@ -94,7 +94,7 @@ Macros</h2></td></tr>
 <tr class="separator:a04478a8f6e74ba88296c303ca5d9ee29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60b5d28d5f88bcb69e8f0f868f5d32fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EnumSerialization_8h.html#a60b5d28d5f88bcb69e8f0f868f5d32fb">MAGIC_ENUM_RANGE_MAX</a>&#160;&#160;&#160;(255)</td></tr>
 <tr class="separator:a60b5d28d5f88bcb69e8f0f868f5d32fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d7940ef229ff77ee6be852958b1fc00"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EnumSerialization_8h.html#a9d7940ef229ff77ee6be852958b1fc00">MM_DEFINE_ENUM_SERIALIZATION_FUNCTIONS</a>(ENUM,  CASE_SENSITIVITY, ...)&#160;&#160;&#160;    <a class="el" href="EnumSerialization_8h.html#a56fbfc41376f4dbf28c4df97a844189f">MM_DEFINE_ENUM_SERIALIZATION_FUNCTIONS_I</a>(ENUM, CASE_SENSITIVITY, <a class="el" href="Preprocessor_8h.html#a28514c385ffb7a29b325a2c209ec2da7">MM_PP_CAT</a>(globalEnumSerializer, __LINE__), __VA_ARGS__)</td></tr>
+<tr class="memitem:a9d7940ef229ff77ee6be852958b1fc00"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EnumSerialization_8h.html#a9d7940ef229ff77ee6be852958b1fc00">MM_DEFINE_ENUM_SERIALIZATION_FUNCTIONS</a>(ENUM,  CASE_SENSITIVITY, ...)&#160;&#160;&#160;    <a class="el" href="EnumSerialization_8h.html#a56fbfc41376f4dbf28c4df97a844189f">MM_DEFINE_ENUM_SERIALIZATION_FUNCTIONS_I</a>(ENUM, CASE_SENSITIVITY, <a class="el" href="Utility_2Preprocessor_8h.html#a28514c385ffb7a29b325a2c209ec2da7">MM_PP_CAT</a>(globalEnumSerializer, __LINE__), __VA_ARGS__)</td></tr>
 <tr class="separator:a9d7940ef229ff77ee6be852958b1fc00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56fbfc41376f4dbf28c4df97a844189f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EnumSerialization_8h.html#a56fbfc41376f4dbf28c4df97a844189f">MM_DEFINE_ENUM_SERIALIZATION_FUNCTIONS_I</a>(ENUM,  CASE_SENSITIVITY,  SERIALIZER, ...)</td></tr>
 <tr class="separator:a56fbfc41376f4dbf28c4df97a844189f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,7 +149,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordtype">bool</span> <a class="code hl_function" href="StandardSerialization_8cpp.html#a2e030070a47872390fb1f3ec08447b5e">trySerialize</a>(<span class="keyword">const</span> ENUM &amp;src, std::string *dst) {                                                              \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordtype">bool</span> <a class="code hl_function" href="Color_8cpp.html#a1c9ccb284a0b5dc794404f8d70f57aa8">trySerialize</a>(<span class="keyword">const</span> ENUM &amp;src, std::string *dst) {                                                              \</div>
 <div class="line">        std::string_view result = magic_enum::enum_name(src);                                                           \</div>
 <div class="line">        if (result.empty())                                                                                             \</div>
 <div class="line">            <span class="keywordflow">return</span> <span class="keyword">false</span>;                                                                                               \</div>
@@ -157,7 +157,7 @@ Macros</h2></td></tr>
 <div class="line">        <span class="keywordflow">return</span> <span class="keyword">true</span>;                                                                                                    \</div>
 <div class="line">    }                                                                                                                   \</div>
 <div class="line">                                                                                                                        \</div>
-<div class="line">    <span class="keywordtype">bool</span> <a class="code hl_function" href="StandardSerialization_8cpp.html#a897b4104dc916637eb6e69bd81724456">tryDeserialize</a>(std::string_view src, ENUM *dst) {                                                              \</div>
+<div class="line">    <span class="keywordtype">bool</span> <a class="code hl_function" href="Color_8cpp.html#aa3225b190e196ba97b2e65f65969d705">tryDeserialize</a>(std::string_view src, ENUM *dst) {                                                              \</div>
 <div class="line">        std::optional&lt;ENUM&gt; result = magic_enum::enum_cast&lt;ENUM&gt;(src);                                                  \</div>
 <div class="line">        if (!result.has_value())                                                                                        \</div>
 <div class="line">            <span class="keywordflow">return</span> <span class="keyword">false</span>;                                                                                               \</div>
@@ -166,8 +166,8 @@ Macros</h2></td></tr>
 <div class="line">    }                                                                                                                   \</div>
 <div class="line">                                                                                                                        \</div>
 <div class="line">    MM_DEFINE_ENUM_SERIALIZATION_FUNCTIONS_VIA_TRY_FUNCTIONS_I(ENUM)</div>
-<div class="ttc" id="aStandardSerialization_8cpp_html_a2e030070a47872390fb1f3ec08447b5e"><div class="ttname"><a href="StandardSerialization_8cpp.html#a2e030070a47872390fb1f3ec08447b5e">trySerialize</a></div><div class="ttdeci">bool trySerialize(const bool &amp;src, std::string *dst)</div><div class="ttdef"><b>Definition:</b> StandardSerialization.cpp:32</div></div>
-<div class="ttc" id="aStandardSerialization_8cpp_html_a897b4104dc916637eb6e69bd81724456"><div class="ttname"><a href="StandardSerialization_8cpp.html#a897b4104dc916637eb6e69bd81724456">tryDeserialize</a></div><div class="ttdeci">bool tryDeserialize(std::string_view src, bool *dst)</div><div class="ttdef"><b>Definition:</b> StandardSerialization.cpp:37</div></div>
+<div class="ttc" id="aColor_8cpp_html_a1c9ccb284a0b5dc794404f8d70f57aa8"><div class="ttname"><a href="Color_8cpp.html#a1c9ccb284a0b5dc794404f8d70f57aa8">trySerialize</a></div><div class="ttdeci">bool trySerialize(const Color &amp;src, std::string *dst)</div><div class="ttdef"><b>Definition:</b> Color.cpp:21</div></div>
+<div class="ttc" id="aColor_8cpp_html_aa3225b190e196ba97b2e65f65969d705"><div class="ttname"><a href="Color_8cpp.html#aa3225b190e196ba97b2e65f65969d705">tryDeserialize</a></div><div class="ttdeci">bool tryDeserialize(std::string_view src, Color *dst)</div><div class="ttdef"><b>Definition:</b> Color.cpp:30</div></div>
 </div><!-- fragment --><p >Same as <code>MM_DEFINE_ENUM_SERIALIZATION_FUNCTIONS</code>, but using <code>magic_enum</code>.</p>
 <p >Note that <code>MM_DEFINE_FLAGS_SERIALIZATION_FUNCTIONS</code> currently cannot be used with enums serialized with this macro.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -206,7 +206,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;    <a class="el" href="EnumSerialization_8h.html#a56fbfc41376f4dbf28c4df97a844189f">MM_DEFINE_ENUM_SERIALIZATION_FUNCTIONS_I</a>(ENUM, CASE_SENSITIVITY, <a class="el" href="Preprocessor_8h.html#a28514c385ffb7a29b325a2c209ec2da7">MM_PP_CAT</a>(globalEnumSerializer, __LINE__), __VA_ARGS__)</td>
+          <td></td><td>&#160;&#160;&#160;    <a class="el" href="EnumSerialization_8h.html#a56fbfc41376f4dbf28c4df97a844189f">MM_DEFINE_ENUM_SERIALIZATION_FUNCTIONS_I</a>(ENUM, CASE_SENSITIVITY, <a class="el" href="Utility_2Preprocessor_8h.html#a28514c385ffb7a29b325a2c209ec2da7">MM_PP_CAT</a>(globalEnumSerializer, __LINE__), __VA_ARGS__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -277,11 +277,11 @@ Macros</h2></td></tr>
 <div class="line">        <span class="keywordflow">return</span> SERIALIZER;                                                                                              \</div>
 <div class="line">    }                                                                                                                   \</div>
 <div class="line">                                                                                                                        \</div>
-<div class="line">    <span class="keywordtype">bool</span> <a class="code hl_function" href="StandardSerialization_8cpp.html#a2e030070a47872390fb1f3ec08447b5e">trySerialize</a>(<span class="keyword">const</span> ENUM &amp;src, std::string *dst) {                                                              \</div>
+<div class="line">    <span class="keywordtype">bool</span> <a class="code hl_function" href="Color_8cpp.html#a1c9ccb284a0b5dc794404f8d70f57aa8">trySerialize</a>(<span class="keyword">const</span> ENUM &amp;src, std::string *dst) {                                                              \</div>
 <div class="line">        <span class="keywordflow">return</span> SERIALIZER.trySerialize(src, dst);                                                                       \</div>
 <div class="line">    }                                                                                                                   \</div>
 <div class="line">                                                                                                                        \</div>
-<div class="line">    <span class="keywordtype">bool</span> <a class="code hl_function" href="StandardSerialization_8cpp.html#a897b4104dc916637eb6e69bd81724456">tryDeserialize</a>(std::string_view src, ENUM *dst) {                                                              \</div>
+<div class="line">    <span class="keywordtype">bool</span> <a class="code hl_function" href="Color_8cpp.html#aa3225b190e196ba97b2e65f65969d705">tryDeserialize</a>(std::string_view src, ENUM *dst) {                                                              \</div>
 <div class="line">        <span class="keywordflow">return</span> SERIALIZER.tryDeserialize(src, dst);                                                                     \</div>
 <div class="line">    }                                                                                                                   \</div>
 <div class="line">                                                                                                                        \</div>
@@ -306,16 +306,16 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="CompositeSnapshots_8cpp.html#ae8c705cd30d39d17b7c0769c8c303c83">serialize</a>(<span class="keyword">const</span> TYPE &amp;src, std::string *dst) {                                                                 \</div>
-<div class="line">        if (!<a class="code hl_function" href="StandardSerialization_8cpp.html#a2e030070a47872390fb1f3ec08447b5e">trySerialize</a>(src, dst))                                                                                    \</div>
+<div class="line">        if (!<a class="code hl_function" href="Color_8cpp.html#a1c9ccb284a0b5dc794404f8d70f57aa8">trySerialize</a>(src, dst))                                                                                    \</div>
 <div class="line">            throwEnumSerializationError(src, #TYPE);                                                                    \</div>
 <div class="line">    }                                                                                                                   \</div>
 <div class="line">                                                                                                                        \</div>
 <div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="CompositeSnapshots_8cpp.html#a19304568664873e32a8849fbf0496588">deserialize</a>(std::string_view src, TYPE *dst) {                                                                 \</div>
-<div class="line">        if (!<a class="code hl_function" href="StandardSerialization_8cpp.html#a897b4104dc916637eb6e69bd81724456">tryDeserialize</a>(src, dst))                                                                                  \</div>
+<div class="line">        if (!<a class="code hl_function" href="Color_8cpp.html#aa3225b190e196ba97b2e65f65969d705">tryDeserialize</a>(src, dst))                                                                                  \</div>
 <div class="line">            throwDeserializationError(src, #TYPE);                                                                      \</div>
 <div class="line">    }</div>
-<div class="ttc" id="aCompositeSnapshots_8cpp_html_a19304568664873e32a8849fbf0496588"><div class="ttname"><a href="CompositeSnapshots_8cpp.html#a19304568664873e32a8849fbf0496588">deserialize</a></div><div class="ttdeci">void deserialize(InputStream &amp;src, IndoorLocation_MM7 *dst)</div><div class="ttdef"><b>Definition:</b> CompositeSnapshots.cpp:186</div></div>
-<div class="ttc" id="aCompositeSnapshots_8cpp_html_ae8c705cd30d39d17b7c0769c8c303c83"><div class="ttname"><a href="CompositeSnapshots_8cpp.html#ae8c705cd30d39d17b7c0769c8c303c83">serialize</a></div><div class="ttdeci">void serialize(const IndoorDelta_MM7 &amp;src, OutputStream *dst)</div><div class="ttdef"><b>Definition:</b> CompositeSnapshots.cpp:318</div></div>
+<div class="ttc" id="aCompositeSnapshots_8cpp_html_a19304568664873e32a8849fbf0496588"><div class="ttname"><a href="CompositeSnapshots_8cpp.html#a19304568664873e32a8849fbf0496588">deserialize</a></div><div class="ttdeci">void deserialize(InputStream &amp;src, IndoorLocation_MM7 *dst)</div><div class="ttdef"><b>Definition:</b> CompositeSnapshots.cpp:259</div></div>
+<div class="ttc" id="aCompositeSnapshots_8cpp_html_ae8c705cd30d39d17b7c0769c8c303c83"><div class="ttname"><a href="CompositeSnapshots_8cpp.html#ae8c705cd30d39d17b7c0769c8c303c83">serialize</a></div><div class="ttdeci">void serialize(const IndoorDelta_MM7 &amp;src, OutputStream *dst)</div><div class="ttdef"><b>Definition:</b> CompositeSnapshots.cpp:392</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -334,21 +334,21 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code hl_define" href="Preprocessor_8h.html#a28514c385ffb7a29b325a2c209ec2da7">MM_PP_CAT</a>(globalFlagsCheck, __LINE__) = [] {                                                      \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code hl_define" href="Utility_2Preprocessor_8h.html#a28514c385ffb7a29b325a2c209ec2da7">MM_PP_CAT</a>(globalFlagsCheck, __LINE__) = [] {                                                      \</div>
 <div class="line">        assert(serializer(std::type_identity&lt;typename FLAGS::enumeration_type&gt;()).isUsableWithFlags());                 \</div>
 <div class="line">        <span class="keywordflow">return</span> <span class="keyword">true</span>;                                                                                                    \</div>
 <div class="line">    }();                                                                                                                \</div>
 <div class="line">                                                                                                                        \</div>
-<div class="line">    <span class="keywordtype">bool</span> <a class="code hl_function" href="StandardSerialization_8cpp.html#a2e030070a47872390fb1f3ec08447b5e">trySerialize</a>(<span class="keyword">const</span> FLAGS &amp;src, std::string *dst) {                                                             \</div>
+<div class="line">    <span class="keywordtype">bool</span> <a class="code hl_function" href="Color_8cpp.html#a1c9ccb284a0b5dc794404f8d70f57aa8">trySerialize</a>(<span class="keyword">const</span> FLAGS &amp;src, std::string *dst) {                                                             \</div>
 <div class="line">        <span class="keywordflow">return</span> serializer(std::type_identity&lt;typename FLAGS::enumeration_type&gt;()).trySerialize(src, dst);               \</div>
 <div class="line">    }                                                                                                                   \</div>
 <div class="line">                                                                                                                        \</div>
-<div class="line">    <span class="keywordtype">bool</span> <a class="code hl_function" href="StandardSerialization_8cpp.html#a897b4104dc916637eb6e69bd81724456">tryDeserialize</a>(std::string_view src, FLAGS *dst) {                                                             \</div>
+<div class="line">    <span class="keywordtype">bool</span> <a class="code hl_function" href="Color_8cpp.html#aa3225b190e196ba97b2e65f65969d705">tryDeserialize</a>(std::string_view src, FLAGS *dst) {                                                             \</div>
 <div class="line">        <span class="keywordflow">return</span> serializer(std::type_identity&lt;typename FLAGS::enumeration_type&gt;()).tryDeserialize(src, dst);             \</div>
 <div class="line">    }                                                                                                                   \</div>
 <div class="line">                                                                                                                        \</div>
 <div class="line">    MM_DEFINE_ENUM_SERIALIZATION_FUNCTIONS_VIA_TRY_FUNCTIONS_I(FLAGS)</div>
-<div class="ttc" id="aPreprocessor_8h_html_a28514c385ffb7a29b325a2c209ec2da7"><div class="ttname"><a href="Preprocessor_8h.html#a28514c385ffb7a29b325a2c209ec2da7">MM_PP_CAT</a></div><div class="ttdeci">#define MM_PP_CAT(x, y)</div><div class="ttdef"><b>Definition:</b> Preprocessor.h:6</div></div>
+<div class="ttc" id="aUtility_2Preprocessor_8h_html_a28514c385ffb7a29b325a2c209ec2da7"><div class="ttname"><a href="Utility_2Preprocessor_8h.html#a28514c385ffb7a29b325a2c209ec2da7">MM_PP_CAT</a></div><div class="ttdeci">#define MM_PP_CAT(x, y)</div><div class="ttdef"><b>Definition:</b> Preprocessor.h:6</div></div>
 </div><!-- fragment --><p >This macro provides a limited support for lexical serialization of <code><a class="el" href="classFlags.html">Flags</a>&lt;T&gt;</code>. It can only be used after an invocation of <code>MM_DEFINE_ENUM_SERIALIZATION_FUNCTIONS</code> for the underlying enum type.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

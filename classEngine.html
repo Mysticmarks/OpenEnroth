@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;135c41f</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;cf228e9</span>
    </div>
   </td>
  </tr>
@@ -73,6 +73,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classEngine-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Engine Class Reference</div></div>
 </div><!--header-->
@@ -86,6 +87,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af0efbe7af2ca079ca613b69406c392b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ef7030a089ecb30bbfcb9e43094717a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEngine.html#a8ef7030a089ecb30bbfcb9e43094717a">~Engine</a> ()</td></tr>
 <tr class="separator:a8ef7030a089ecb30bbfcb9e43094717a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef3ccfde26c2f2bdf9f059af5a83a5bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classResourceManager.html">ResourceManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEngine.html#aef3ccfde26c2f2bdf9f059af5a83a5bd">resources</a> () const</td></tr>
+<tr class="separator:aef3ccfde26c2f2bdf9f059af5a83a5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e6fbae6c087bbfa2b1e20f11c46460d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEngine.html#a4e6fbae6c087bbfa2b1e20f11c46460d">Initialize</a> ()</td></tr>
 <tr class="separator:a4e6fbae6c087bbfa2b1e20f11c46460d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a891943bb794f35f2e03c117fac060f5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVis__PIDAndDepth.html">Vis_PIDAndDepth</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEngine.html#a891943bb794f35f2e03c117fac060f5d">PickMouse</a> (float fPickDepth, int uMouseX, int uMouseY, <a class="el" href="structVis__SelectionFilter.html">Vis_SelectionFilter</a> *sprite_filter, <a class="el" href="structVis__SelectionFilter.html">Vis_SelectionFilter</a> *face_filter)</td></tr>
@@ -188,6 +191,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a17633f8ba730a25c08f82328ef969838"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa34e7ed0bde6a46d00676562747a1ded"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPersistentVariables.html">PersistentVariables</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEngine.html#aa34e7ed0bde6a46d00676562747a1ded">_persistentVariables</a></td></tr>
 <tr class="separator:aa34e7ed0bde6a46d00676562747a1ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43cee94ee6f4e3e382f889628e6cd68b"><td class="memItemLeft" align="right" valign="top">std::array&lt; unsigned char, 50 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEngine.html#a43cee94ee6f4e3e382f889628e6cd68b">_OE_transientVariables</a></td></tr>
+<tr class="separator:a43cee94ee6f4e3e382f889628e6cd68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad02b01394b318ded787b672dc2932bf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0">MapId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEngine.html#ad02b01394b318ded787b672dc2932bf7">_currentLoadedMapId</a> = <a class="el" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0a590be42408444a6cca8d82a9202da84c">MAP_INVALID</a></td></tr>
 <tr class="separator:ad02b01394b318ded787b672dc2932bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8127b67865556b43901969eaf5bb7fd2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0">MapId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEngine.html#a8127b67865556b43901969eaf5bb7fd2">_transitionMapId</a> = <a class="el" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0a590be42408444a6cca8d82a9202da84c">MAP_INVALID</a></td></tr>
@@ -198,8 +203,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a685362ff84e08444461ead85cf92e458"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9cffedbfc11490d912cc26dcf114e7d"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classGUIMessageQueue.html">GUIMessageQueue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEngine.html#ac9cffedbfc11490d912cc26dcf114e7d">_messageQueue</a></td></tr>
 <tr class="separator:ac9cffedbfc11490d912cc26dcf114e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4513fb7eee376e25ebe2e23ad03eadc9"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classGameResourceManager.html">GameResourceManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEngine.html#a4513fb7eee376e25ebe2e23ad03eadc9">_gameResourceManager</a></td></tr>
-<tr class="separator:a4513fb7eee376e25ebe2e23ad03eadc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e50bb3181a95835aa5ba5e2d146e672"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classStatusBar.html">StatusBar</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEngine.html#a2e50bb3181a95835aa5ba5e2d146e672">_statusBar</a></td></tr>
 <tr class="separator:a2e50bb3181a95835aa5ba5e2d146e672"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a283e25609b0d41fb2f50e09f388c1002"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structIndoorLocation.html">IndoorLocation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEngine.html#a283e25609b0d41fb2f50e09f388c1002">_indoor</a></td></tr>
@@ -210,6 +213,11 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a0255bedaffe5eb965ca67b6e1535d072"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92dd1dbfa201d31489c64f884f5fddcd"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structLightsStack__MobileLight__.html">LightsStack_MobileLight_</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEngine.html#a92dd1dbfa201d31489c64f884f5fddcd">_mobileLights</a></td></tr>
 <tr class="separator:a92dd1dbfa201d31489c64f884f5fddcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a9222068a0b4389d2c6bfb48405772445"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classResourceManager.html">ResourceManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEngine.html#a9222068a0b4389d2c6bfb48405772445">_resourceManager</a></td></tr>
+<tr class="separator:a9222068a0b4389d2c6bfb48405772445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af0efbe7af2ca079ca613b69406c392b8" name="af0efbe7af2ca079ca613b69406c392b8"></a>
@@ -761,6 +769,31 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aef3ccfde26c2f2bdf9f059af5a83a5bd" name="aef3ccfde26c2f2bdf9f059af5a83a5bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef3ccfde26c2f2bdf9f059af5a83a5bd">&#9670;&#160;</a></span>resources()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classResourceManager.html">ResourceManager</a> * Engine::resources </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af028add00f4a849c60d0afa42da04a08" name="af028add00f4a849c60d0afa42da04a08"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af028add00f4a849c60d0afa42da04a08">&#9670;&#160;</a></span>SecondaryInitialization()</h2>
 
@@ -905,20 +938,6 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a4513fb7eee376e25ebe2e23ad03eadc9" name="a4513fb7eee376e25ebe2e23ad03eadc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4513fb7eee376e25ebe2e23ad03eadc9">&#9670;&#160;</a></span>_gameResourceManager</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classGameResourceManager.html">GameResourceManager</a>&gt; Engine::_gameResourceManager</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ac1787ab67e42fcb25411ad94c54f6013" name="ac1787ab67e42fcb25411ad94c54f6013"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac1787ab67e42fcb25411ad94c54f6013">&#9670;&#160;</a></span>_globalEventMap</h2>
 
@@ -1003,6 +1022,20 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a43cee94ee6f4e3e382f889628e6cd68b" name="a43cee94ee6f4e3e382f889628e6cd68b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43cee94ee6f4e3e382f889628e6cd68b">&#9670;&#160;</a></span>_OE_transientVariables</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;unsigned char, 50&gt; Engine::_OE_transientVariables</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a13cde915fac0bbf8528626a444685f79" name="a13cde915fac0bbf8528626a444685f79"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a13cde915fac0bbf8528626a444685f79">&#9670;&#160;</a></span>_outdoor</h2>
 
@@ -1041,6 +1074,28 @@ Public Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="structPersistentVariables.html">PersistentVariables</a> Engine::_persistentVariables</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9222068a0b4389d2c6bfb48405772445" name="a9222068a0b4389d2c6bfb48405772445"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9222068a0b4389d2c6bfb48405772445">&#9670;&#160;</a></span>_resourceManager</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classResourceManager.html">ResourceManager</a>&gt; Engine::_resourceManager</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
